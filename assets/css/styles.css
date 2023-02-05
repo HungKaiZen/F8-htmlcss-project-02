@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FFB900;
+    --bg-color: #FFFCF4;
+    --text-color: #171100;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Sen', sans-serif; */
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* common */
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 16px;
+    min-width: 118px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+/* Begin: Header */
+.header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    left: 0;right: 0;
+    padding-top: 36px;
+    background-color: var(--bg-color);
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+/* .header__navbar-logo {
+
+} */
+
+.header__navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    margin-left: auto;
+    margin-right: 49px;
+}
+
+.header__navbar-item {
+    position: relative;
+}
+
+.header__navbar-item.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    left: 21px;
+    width: 10px;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.header__navbar-item-link {
+    padding: 8px 21px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* .header__action {
+
+} */
+
+.header__action-sign-up {
+    min-width: 144px;
+    background-color: var(--text-color);
+}
+/* End: Header */
+
+/* Bengin: Hero */
+.hero-wrap {
+    padding: 64px 0;
+    background-color: var(--bg-color);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero__img-wrap {
+    position: relative;
+}
+
+.block__courses {
+    position: absolute;
+    right: -100px;
+    bottom: 48px;
+    width: 270px;
+    padding: 24px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.block__courses .course__item {
+    margin-bottom: 14px;
+}
+
+.course__item-link {
+    display: flex;
+    gap: 16px;
+}
+
+.block__courses .course__img {
+    width: 48px;
+    height: 48px;
+}
+
+.block__courses .courses-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.block__courses .course-qty {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #5F5B53;
+}
+
+.block__courses .course-desc {
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.hero__img {
+    width: 470px;
+    height: 685px;
+}
+
+.hero__info {
+    width: 470px;
+}
+
+.hero__title {
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero__info .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5F5B53;
+
+}
+
+.hero__demo-course {
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.hero__demo-see {
+    min-width: 180px;
+    margin-right: 28px;
+    padding: 25px 16px;
+    border-radius: 32px;
+}
+
+.hero__demo-watch {
+    display: flex;
+    align-items: center;
+}
+
+.hero__watch-link {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.hero__action-desc {
+    margin-top: 48px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #5F5B53;
+}
+
+.hero__action {
+    display: flex;
+    margin-top: 8px;
+}
+
+.hero__action-studens, .hero__action-courses {
+    color: #5F5B53;
+    font-size: 1.8rem;
+}
+
+.hero__action-studens {
+    margin-right: 28px;
+}
+
+.hero__action-studens .qty {
+    margin-right: 8px;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 44px;
+    color: #171100;
+}
+
+.hero__action-courses .qty {
+    margin-right: 8px;
+    font-family: 'Sen';
+    font-weight: 700;
+    font-size: 44px;
+    color: #171100;
+}
+/* End: Hero */
